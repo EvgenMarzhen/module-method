@@ -1,18 +1,12 @@
 public class TestMethod {
-    public static int abs(int x) {
-        if(x > 0) {
-            return x;
-        }
-        return x * (-1);
-    }
     /*
     * Необходимо реализовать метод таким образом, чтобы он возвращал только дробную часть числа х.
     * Подсказка: вещественное число может быть преобразовано к целому путем отбрасывания дробной части.
     */
         public static double fraction(double x) {
             double d1 = (int)x;
-            double diff = x-d1;
-            return diff;
+            double frc = x-d1;
+            return frc;
         }
     /*
     Необходимо реализовать метод таким образом, чтобы он возвращал результат сложения двух последних знаков числа х, предполагая, что знаков в числе не менее двух.
@@ -23,8 +17,8 @@ public class TestMethod {
     public static int sumLastNums(int x) {
         int y = (x%100)/10;
         int z = (x%100)%10;
-        int sum = z + y;
-        return sum;
+        int sumLst = z + y;
+        return sumLst;
     }
 
     /*
@@ -37,8 +31,8 @@ public class TestMethod {
     результат: 3
      */
     public static int charToNum(char x) {
-        int y = x - 48;
-        return y;
+        int toNum = x - 48;
+        return toNum;
     }
     /*
       Необходимо реализовать метод таким образом, чтобы он принимал число x и возвращал true если оно положительное.
@@ -50,8 +44,8 @@ public class TestMethod {
         результат: false
      */
     public static boolean isPositive(int x) {
-        boolean diff = x > 0;
-        return diff;
+        boolean positive = x > 0;
+        return positive;
     }
     /*
     Необходимо реализовать метод таким образом, чтобы он принимал число x и возвращал true если оно двузначное.
@@ -64,8 +58,8 @@ public class TestMethod {
         результат: false
      */
     public static boolean is2Digits(int x){
-        boolean num = x>9 && x<100;
-        return num;
+        boolean dig = x>9 && x<100;
+        return dig;
     }
 
     /*
@@ -97,8 +91,8 @@ public class TestMethod {
     результат: true
      */
     public static boolean isDivisor (int a, int b){
-        boolean diff = a%b == 0 || b%a == 0;
-        return diff;
+        boolean div = a%b == 0 || b%a == 0;
+        return div;
     }
     /*
     Необходимо реализовать метод таким образом, чтобы он возвращал true если все три полученных методом числа равны
@@ -107,8 +101,8 @@ public class TestMethod {
         результат: true
      */
     public static boolean isEqual (int a, int b, int c){
-        boolean diff = (a==b) && (b==c) && (c==a);
-        return diff;
+        boolean equal = a==b && b==c && c==a;
+        return equal;
     }
     /*
     Выполните с его помощью последовательное сложение пяти чисел: 5, 11, 123, 14, 1, и результат выведите на экран. Постарайтесь выполнить задачу,
