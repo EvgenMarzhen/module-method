@@ -58,7 +58,7 @@ public class TestMethod {
         результат: false
      */
     public static boolean is2Digits(int x){
-        boolean dig = x>9 && x<100;
+        boolean dig = x>9 && x<100 || x>-100 && x<-9;
         return dig;
     }
 
@@ -101,8 +101,7 @@ public class TestMethod {
         результат: true
      */
     public static boolean isEqual (int a, int b, int c){
-        boolean equal = a==b && b==c && c==a;
-        return equal;
+        return a==b && b==c;
     }
     /*
     Выполните с его помощью последовательное сложение пяти чисел: 5, 11, 123, 14, 1, и результат выведите на экран. Постарайтесь выполнить задачу,
@@ -118,6 +117,7 @@ public class TestMethod {
     Итого 4
      */
     public static int lastNumSum(int a, int b){
+
         return (a%10)+(b%10);
     }
 }
