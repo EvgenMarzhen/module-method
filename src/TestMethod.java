@@ -81,7 +81,7 @@ public class TestMethod {
         a=5 b=1 num=3
         результат: true
      */
-    public static boolean isInRange(int a, int b, int num){
+    public static boolean isInRange(int a, int b, int num) {
         return (a >= num && b <= num) || (a <= num && b >= num);
     }
     /*
@@ -91,8 +91,7 @@ public class TestMethod {
     результат: true
      */
     public static boolean isDivisor (int a, int b){
-        boolean div = a%b == 0 || b%a == 0;
-        return div;
+        return a%b == 0 || b%a == 0;
     }
     /*
     Необходимо реализовать метод таким образом, чтобы он возвращал true если все три полученных методом числа равны
@@ -117,7 +116,6 @@ public class TestMethod {
     Итого 4
      */
     public static int lastNumSum(int a, int b){
-
         return (a%10)+(b%10);
     }
 }
