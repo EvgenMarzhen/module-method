@@ -7,13 +7,13 @@ public class Main {
 //        System.out.println(TestMethod.is2Digits(-5));
 //        System.out.println(TestMethod.isUpperCase('Z'));
 //        System.out.println(TestMethod.isInRange(1,2,2));
-//        System.out.println(TestMethod.isDivisor(2,0));
+        System.out.println(TestMethod.isDivisor(5,0));
 //        System.out.println(TestMethod.isEqual(3, 3, 1));
 //        System.out.println(TestMethod.isPositive(1));
-            int sum = TestMethod.lastNumSum(5,11);
-            sum = TestMethod.lastNumSum(sum,123);
-            sum = TestMethod.lastNumSum(sum,14);
-            sum = TestMethod.lastNumSum(sum,1);
-            System.out.println(sum);
+//            int sum = TestMethod.lastNumSum(5,11);
+//            sum = TestMethod.lastNumSum(sum,123);
+//            sum = TestMethod.lastNumSum(sum,14);
+//            sum = TestMethod.lastNumSum(sum,1);
+//            System.out.println(sum);
     }
 }

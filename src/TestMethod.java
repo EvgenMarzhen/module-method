@@ -90,8 +90,11 @@ public class TestMethod {
     a=3 b=6
     результат: true
      */
-    public static boolean isDivisor (int a, int b){
-        return a%b == 0 || b%a == 0;
+    public static boolean isDivisor (int a, int b) {
+        if (b != 0 && (a%b == 0 || b%a == 0)) {
+            return true;
+        }
+        else return false;
     }
     /*
     Необходимо реализовать метод таким образом, чтобы он возвращал true если все три полученных методом числа равны
